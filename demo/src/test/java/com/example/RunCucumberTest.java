@@ -1,11 +1,15 @@
-package com.example;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+package Runner;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
+
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
-public class RunCucumberTest {
+@CucumberOptions(features= "features/OpenGoogle.feature" ,glue="stepDefinitions")
+public class RunnerClass {
+
+
 
 }
